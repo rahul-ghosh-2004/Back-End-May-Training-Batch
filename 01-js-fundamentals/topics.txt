@@ -1,0 +1,16 @@
+1. Data Types
+2. Variables
+3. Template Literals
+4. Operators
+5. Control Statements
+6. Functions
+7. String Methods
+8. Arrays
+9. Objects
+10. Destructuring
+11. Spread & Rest Operators
+12. Higher Order Functions
+13. forEach, map, filter, reduce
+14. Asynchronous Programming
+15. Fetch API
+16. Promises

@@ -8,8 +8,9 @@ const app = express()
 // frontend for S --> https://s.com
 // frontend for J --> https://j.com 
 
+// Cross Origin Resource Sharing
 app.use(cors({
-    // origin: ["https://j.com", "https://s.com"]
+   //  origin: ["https://j.com", "https://s.com"]
     origin: "*",  // Anyone can access
     credentials: true
 }))
@@ -22,7 +23,7 @@ Two important packages are there called,
 2. cookieParser(), For storing credentials we should use browser's cookie.
 */
 
-// Hey server! please take all the static files (like images, videos, etc) and hold it inside the "public" folder.
+// Hey server! please take all the static files (like images, videos, etc) and hold/store it inside the "public" folder.
 app.use(express.static("public"))
 
 /*
@@ -44,3 +45,35 @@ app.use(express.urlencoded())
 
 
 export default app
+
+
+
+// import express from "express"
+
+// const app = express()
+
+// End points --> Destinations or Addresses, where some operation will be performed.
+
+// 200 --> Everything is okey (No error is there)
+// 400 --> Client side error
+// 500 --> Server side error
+
+// app.get("/home", (req, res) => {
+//    return res
+//    .status(200)
+//    .json({
+//       "message": "It is my Home Page!"
+//    })
+// })
+
+// app.get("/login", (req, res) => {
+//    return res
+//    .status(200)
+//    .json({
+//       "message": "Login Page!"
+//    })
+// })
+
+// app.listen(3000, () => {
+//    console.log("Server is running!")
+// })
